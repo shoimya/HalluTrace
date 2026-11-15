@@ -1,0 +1,12 @@
+# Secrets: the OpenAI API key must never reach GitHub.
+.env
+
+# Saved API replies, run logs and downloaded data: large, and rebuilt by the code.
+APICache/
+runs/
+HaluEvalData/
+
+# Python and editor clutter.
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store

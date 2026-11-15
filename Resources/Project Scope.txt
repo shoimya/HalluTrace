@@ -1,0 +1,37 @@
+
+FEWL	            Expertise-weighted agreement and laziness penalty
+SelfCheckGPT	    Consistency across generated responses
+SAC³	            Consistency across question variations and models
+Semantic Entropy	Uncertainty across different answer meanings
+
+
+Things that we need to accept:
+Without verified answers, we cannot automatically know how accurate our scores are
+High confidence does not guarantee factual correctness. 
+A model can confidently produce an incorrect statement.
+
+What we are going to assume And what we need:
+We want a binary output of whether or not it is a hallucination
+We also want a confidence score
+we are gonna assume it is a black box so we do not have the internal numbers
+We are gonna assume that we have model generated text
+we are in a zero resource environment - no data gathering.
+
+
+Some things people have tried:-
+
+Detecting hallucinations when an LLM repeatedly gives the same incorrect answer.
+Can targeted question perturbations detect confidently repeated hallucinations more accurately and cheaply than existing black-box methods?
+Start by finding and categorizing the hallucinations existing methods miss. That gives us an experimentally grounded research problem rather than designing another detector without knowing what it improves.
+promising gap is confidently repeated false claims, even when several models agree. Recent papers already cover most obvious extensions, including multi-model agreement, claim-level checks, and calibration.
+What important assumption do SelfCheckGPT, SAC³, Semantic Entropy, and FEWL make that may not hold in practice?
+
+
+
+
+appraoches:
+semantic entropy :  measures uncertainty across the meanings of generated answers rather than just individual words.
+
+
+questions:
+Are we trying to detect hallucinations using only the generated text, or are we allowed to consult external evidence?

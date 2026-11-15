@@ -1,0 +1,14 @@
+Data sets i know of
+
+FEWL 
+HaluEval - Evaluate hallucination detection accuracy on a larger benchmark.
+TruthfulQA - Evaluate factual correctness and rank LLMs by hallucination levels.
+CHALE - Test whether the method distinguishes correct, partially hallucinated, and hallucinated answers.
+
+----------------------------
+
+SelfCheckGPT
+
+WikiBio - Source of 238 biography topics used to generate passages with GPT-3.
+SelfCheckGPT - WikiBio Dataset	Contains 238 GPT-3-generated passages and 1,908 human-annotated sentences for evaluating hallucination detection.
+
